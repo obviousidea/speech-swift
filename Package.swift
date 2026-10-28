@@ -240,10 +240,10 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/ml-explore/mlx-swift", .upToNextMinor(from: "0.33.0")),
-        // Pin the MLX 0.33-compatible runtime until its next stable tag is published.
+        // Versioned compatibility snapshot of the MLX 0.33 runtime.
         .package(
-            url: "https://github.com/ml-explore/mlx-swift-lm",
-            revision: "3d066d3a0ffdc7e70c476a3d31488ea62dfdd0ac"
+            url: "https://github.com/obviousidea/mlx-swift-lm",
+            exact: "3.33.0-neodigalo.1"
         ),
         .package(url: "https://github.com/apple/swift-argument-parser", from: "1.5.0"),
         .package(url: "https://github.com/modelcontextprotocol/swift-sdk.git", exact: "0.12.1"),
